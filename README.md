@@ -48,6 +48,9 @@ npm install
 npm start
 ```
 
+### To Do List app
+
+
 <br>
 
 In our current example  we have `<ToDoList>` component which renders other components:  `<Summary>` and a list of  `<Task>` components. 
@@ -58,10 +61,15 @@ In our current example  we have `<ToDoList>` component which renders other compo
 
 ![img](https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/to%20do%20list.png)
 
+
 <br>
+
 
 Each `<Task>` card component is a `class` component and has a `state` that holds `taskCompleted` value.
 
+
+
+<br>
 
 
 ![img](
