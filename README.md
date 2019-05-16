@@ -11,9 +11,7 @@ We’ve also learnt how to **change the data within the same component using sta
 **To summarize**: *state belongs to the component itself and props are used to pass data to child components*
 
 
-
-
-
+<br>
 
 
 ## Lifting State Up
@@ -24,9 +22,7 @@ Often, several components need to reflect the same changing data.
 
 Moving the state to the closes common ancestor component is called **lifting the state up** . 
 
-
-
-
+<br>
 
 ### Getting Started
 
@@ -47,6 +43,8 @@ npm install
 # Start the development server
 npm start
 ```
+
+<br>
 
 ### To Do List app
 
