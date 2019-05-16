@@ -94,11 +94,11 @@ https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/li
 
 
 
+<br>
 
 
 
-
-**components/Task.js**
+**`components/Task.js`**
 
 ```js
 //		/components/Task.js
@@ -122,7 +122,7 @@ https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/li
 
 
 
-**components/ToDoList.js**
+**`components/ToDoList.js`**
 
 ```js
 //		/components/ToDoList.js
@@ -136,6 +136,10 @@ class ToDoList extends Component {
     };
 ```
 
+
+
+
+<br>
 
 
 
@@ -157,7 +161,11 @@ https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/li
 
 
 
-**components/TodoList.js**
+<br>
+
+
+
+**`components/TodoList.js`**
 
 ```js
 //		/components/ToDoList.js
@@ -202,12 +210,15 @@ class ToDoList extends Component {
 
 
 
-
 #### Pass method `toggleTaskDone` to the `<Task>` and tie it to the button
 
 
 
-**components/ToDoList.js**
+<br>
+
+
+
+**`components/ToDoList.js`**
 
 ```jsx
 //		/components/ToDoList.js
@@ -239,8 +250,12 @@ render() {
 
 
 
+<br>
 
-**components/Task.js**
+
+
+
+**`components/Task.js`**
 
 ```jsx
 //		/components/Task.js
@@ -284,7 +299,11 @@ render() {
 
 
 
-**components/ToDoList.js**
+<br>
+
+
+
+**`components/ToDoList.js`**
 
 ```jsx
   render() {
@@ -302,8 +321,11 @@ render() {
 #### Update `Summary.js` to show the data passed through `props`
 
 
+<br>
 
-**components/Summary.js**
+
+
+**`components/Summary.js`**
 
 ```jsx
 import React from 'react'
@@ -334,7 +356,11 @@ We have a minor bug. Our Tasks Completed don't have a check that prevent the `ta
 
 
 
-**components/ToDoList.js**
+<br>
+
+
+
+**`components/ToDoList.js`**
 
 ```jsx
 //		components/ToDoList.js
