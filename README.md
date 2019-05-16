@@ -56,7 +56,7 @@ In our current example  we have `<ToDoList>` component which renders other compo
 
 
 
-![img](./to do list.png)
+![img](https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/to%20do%20list.png)
 
 <br>
 
