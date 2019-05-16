@@ -64,7 +64,8 @@ Each `<Task>` card component is a `class` component and has a `state` that holds
 
 
 
-![img](./lifting state up 01.png)
+![img](
+https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/lifting%20state%20up%2001.png)
 
 
 
@@ -82,7 +83,8 @@ First we will remove `state` from `<Task>` component and instead create a new pr
 
 
 
-![img](./lifting state up 02.png)
+![img](
+https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/lifting%20state%20up%2002.png)
 
 
 
@@ -140,7 +142,8 @@ We will have to update all 3 components to have the new lifted state properly co
 
 
 
-![img](./lifting state up 03.png)
+![img](
+https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/lifting%20state%20up%2003.png)
 
 
 
