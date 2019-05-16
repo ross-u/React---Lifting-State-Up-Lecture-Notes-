@@ -110,8 +110,8 @@ https://github.com/ross-u/React---Lifting-State-Up-Lecture-Notes-/blob/master/li
 //     taskCompleted: false
 //   }
   
-//			 ⇡  	⇡ 						
-// Delete `state` from `Task.js`
+//	    ⇡         ⇡ 						
+//   Delete `state` from `Task.js`
 ```
 
 
@@ -132,7 +132,7 @@ class ToDoList extends Component {
     super();
     this.state = {
       tasks: data,
-      tasksCompleted: 0			//			⟻  create new property
+      tasksCompleted: 0	 	//	  ⟻  create new property
     };
 ```
 
@@ -174,11 +174,11 @@ class ToDoList extends Component {
     
     this.toggleTaskDone = this.toggleTaskDone.bind(this);
     
-//			↥	  `bind` new method toggleTaskDone   ↥
+//	 ↥  `bind` new method toggleTaskDone    ↥
   };
   
   
-//	⤥	  create method to update number of tasksCompleted   ⤦
+//   ⤥    create method to update number of tasksCompleted   ⤦
     toggleTaskDone(id) {
     const tasksCopy = [...this.state.tasks];
     let tasksCompleted = this.state.tasksCompleted;
@@ -217,8 +217,9 @@ render() {
                      {...task}
                      deleteTask={ this.deleteTaskById }
                      updateTaskStatus={ this.toggleTaskDone } />
-// 										 	 ⤤ 		  PASS METHOD AS PROP 		⤣
-			...
+// 	 	   ⤤       PASS METHOD AS PROP		⤣
+
+     ...
   ...
 ```
 
@@ -248,7 +249,7 @@ render() {
       <div className='task-card-half'>
         <h1>{this.props.name}</h1>
         {
-          this.props.isDone ?		// 	 ⟻	UPDATE HERE
+          this.props.isDone ?	     // 	 ⟻	UPDATE THE CONDITION HERE
             <h3 style={{color: 'green'}}>DONE ✅</h3>
             :
             <h3 style={{color: 'red'}}>PENDING</h3>
@@ -261,9 +262,9 @@ render() {
       
   <button className='add' 
     onClick={()=> this.props.updateTaskStatus(this.props.id) }>
-{/*				    ⤤ 		  PASS METHOD AS PROP 		⤣								*/}
+{/ 	        	⤤      PASS METHOD AS PROP 	⤣		*/}
     {
-        this.props.isDone ?			// 	 ⟻	UPDATE HERE
+        this.props.isDone ?	// 	 ⟻	UPDATE THE CONDITION HERE
         <span>UNDO ❌</span>
         :
         <span>✅</span>
@@ -288,7 +289,7 @@ render() {
     return (
       <div>
         <Summary tasksCompleted={this.state.tasksCompleted}/>
-        {/*				⤤ 		  PASS DATA AS A PROP 		⤣			*/}
+        {/*	⤤      PASS DATA AS A PROP      ⤣        */}
 ```
 
 
@@ -314,7 +315,7 @@ function summary(props) {
     <div>
       <h1>TASKS COMPLETED:</h1>
       <p className="tasks-completed">{props.tasksCompleted}</p>
-{/*						  			  								⤤  	  HERE    	⤣	     */}
+{/*				        ⤤   HERE    ⤣	       */}
     </div>
   )
 }
@@ -329,9 +330,9 @@ export default summary;
 
 
 
+We have a minor bug. Our Tasks Completed don't have a check that prevent the `tasksCompleted` being a negative number when we delete a task and tasks completed are 0.
 
-
-#### Update `deleteTaskById` in `ToDoList.js`
+#### Update `deleteTaskById` in `ToDoList.js` to prevent subtracting from `tasksCompleted` when Task is deleted and count is 0.
 
 
 
