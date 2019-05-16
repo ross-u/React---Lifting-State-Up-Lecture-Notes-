@@ -197,6 +197,9 @@ class ToDoList extends Component {
 ```
 
 
+<br>
+
+
 
 
 
@@ -225,7 +228,7 @@ render() {
 
 
 
-
+<br>
 
 
 
@@ -262,7 +265,7 @@ render() {
       
   <button className='add' 
     onClick={()=> this.props.updateTaskStatus(this.props.id) }>
-{/ 	        	⤤      PASS METHOD AS PROP 	⤣		*/}
+{/* 	        	⤤      PASS METHOD AS PROP 	⤣		*/}
     {
         this.props.isDone ?	// 	 ⟻	UPDATE THE CONDITION HERE
         <span>UNDO ❌</span>
@@ -273,8 +276,7 @@ render() {
 ```
 
 
-
-
+<br>
 
 
 
@@ -293,10 +295,7 @@ render() {
 ```
 
 
-
-
-
-
+<br>
 
 
 
@@ -325,8 +324,7 @@ export default summary;
 ```
 
 
-
-
+<br>
 
 
 
@@ -356,8 +354,7 @@ deleteTaskById (id)  {
 ```
 
 
-
-
+<br>
 
 
 
